@@ -1,0 +1,19 @@
+{
+  "name": "api skelton",
+  "version": "1.0.0",
+  "description": "simple api skelton with express",
+  "type": "module",
+  "main": "app.mjs",
+  "scripts": {
+    "start": "node app.mjs"
+  },
+  "author": "D.F.Mac. @TripArts Music",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0"
+  }
+}

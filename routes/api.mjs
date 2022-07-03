@@ -16,7 +16,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/sec1:
+ * /api/seq1:
  *   post:
  *     tags:
  *       - api
@@ -32,8 +32,8 @@ const router = express.Router();
  *              status: "OK"
  *              count: 最終的な count の値
  */
-router.post('/sec1',async (req,res)=>{
-  console.log("POST /"+routePath+"/sec1");
+router.post('/seq1',async (req,res)=>{
+  console.log("POST /"+routePath+"/seq1");
 
   const ROOTURL = req.protocol+'://'+req.get('host');
   let result;

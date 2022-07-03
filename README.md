@@ -4,11 +4,21 @@
 
 API skelton using node.js, express and swagger-jsdoc.
 
-## usage
+## deploy
 
 ```
 npm i
 npm start
+```
+
+## api docs
+
+http://localhost:3000/spec
+
+## testing
+
+```
+curl -X POST http://localhost:3000/api/seq1
 ```
 
 ## dependencies

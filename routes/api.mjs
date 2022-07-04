@@ -23,7 +23,6 @@ const router = express.Router();
  *     description: POST /func/counter を 1000msに1回、計10回呼んだ結果を返す。スレッドセーフではないため、結果が開始時の値の+10になることは保証されない。
  *     produces:
  *       - application/json
- *     parameters:
  *     responses:
  *       200:
  *         description: 処理成功

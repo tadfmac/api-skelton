@@ -28,6 +28,7 @@ const docOpt = {
         url:"/LICENSE.txt"
       },
     },
+    host: 'localhost:3000'
   },
   apis: ['./routes/api.mjs', './routes/func.mjs']
 };

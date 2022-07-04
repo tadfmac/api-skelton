@@ -26,7 +26,6 @@ let _count = 0;
  *     description: counter の値を返す。
  *     produces:
  *       - application/json
- *     parameters:
  *     responses:
  *       200:
  *         description: 処理成功
@@ -47,7 +46,6 @@ let _count = 0;
  *     description: counter をインクリメントする。
  *     produces:
  *       - application/json
- *     parameters:
  *     responses:
  *       200:
  *         description: 処理成功
@@ -68,7 +66,6 @@ let _count = 0;
  *     description: counterに0をセットする。
  *     produces:
  *       - application/json
- *     parameters:
  *     responses:
  *       200:
  *         description: 処理成功

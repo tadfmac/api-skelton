@@ -30,10 +30,17 @@ let _count = 0;
  *     responses:
  *       200:
  *         description: 処理成功
- *         examples:
- *           result:
- *              status: "OK"
- *              count: 処理後のcounterの値
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status: 
+ *               type: string
+ *               description: OK or NG
+ *               example: OK
+ *             count: 
+ *               type: integer
+ *               description: 現在のcountの値
+ *               example: 0
  *   post:
  *     tags:
  *       - func
@@ -44,10 +51,17 @@ let _count = 0;
  *     responses:
  *       200:
  *         description: 処理成功
- *         examples:
- *           result:
- *              status: "OK"
- *              count: 処理後のcounterの値
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status: 
+ *               type: string
+ *               description: OK or NG
+ *               example: OK
+ *             count: 
+ *               type: integer
+ *               description: 処理後のcountの値
+ *               example: 1
  *   delete:
  *     tags:
  *       - func
@@ -58,10 +72,17 @@ let _count = 0;
  *     responses:
  *       200:
  *         description: 処理成功
- *         examples:
- *           result:
- *              status: "OK"
- *              count: 処理後のcounterの値
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status: 
+ *               type: string
+ *               description: OK or NG
+ *               example: OK
+ *             count: 
+ *               type: integer
+ *               description: リセット後のcountの値
+ *               example: 0
  */
 router.get('/counter',(req,res)=>{
   console.log("GET /"+routePath+"/count");

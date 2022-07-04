@@ -19,7 +19,6 @@ let _count = 0;
 
 const docOpt = {
   swaggerDefinition: {
-    openapi: '3.0.0',
     info: {
       title: 'api-skelton',
       version: '0.1.0',

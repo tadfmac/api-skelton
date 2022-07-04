@@ -20,18 +20,26 @@ const router = express.Router();
  *   post:
  *     tags:
  *       - api
- *     description: POST /func/counter を 10回呼んだ結果を返す。
+ *     description: POST /func/counter を 1000msに1回、計10回呼んだ結果を返す。スレッドセーフではないため、結果が開始時の値の+10になることは保証されない。
  *     produces:
  *       - application/json
  *     parameters:
  *     responses:
  *       200:
  *         description: 処理成功
- *         examples:
- *           result:
- *              status: "OK"
- *              count: 最終的な count の値
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status: 
+ *               type: string
+ *               description: OK or NG
+ *               example: OK
+ *             count: 
+ *               type: integer
+ *               description: 最終的な count の値
+ *               example: 10
  */
+
 router.post('/seq1',async (req,res)=>{
   console.log("POST /"+routePath+"/seq1");
 
